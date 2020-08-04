@@ -1,0 +1,30 @@
+
+#events-list-look {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+    horiz-align: center;
+}
+
+#events-list-look td, #events-list-look th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#events-list-look tr:nth-child(even){background-color: #f2f2f2;}
+
+#events-list-look tr:hover {background-color: #222222;}
+
+#events-list-look th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(27, 27, 27, 0.76);
+    color: white;
+}
+
+
+

@@ -5,6 +5,13 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
+  'myApp.lecturers',
+  'myApp.header',
+  'myApp.participants',
+  'myApp.participants_list',
+  'myApp.attendants',
+  'myApp.events_list',
+  'myApp.login',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

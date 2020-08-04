@@ -1,0 +1,34 @@
+.view1-flex-container {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(43, 43, 43);
+    position: fixed;
+    bottom: 0px;
+    display: flex
+}
+.footer-div-container {
+    width: 33%;
+    text-align: center;
+
+}
+
+h6 {
+    font-family: "Barlow Condensed";
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+}
+
+p {
+    font-size: 13px;
+    color: white;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+/*.register-button {*/
+/*    margin-top: 400px;*/
+/*}*/

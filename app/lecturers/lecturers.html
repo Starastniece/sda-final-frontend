@@ -1,0 +1,18 @@
+<div ng-controller="LecturersCtrl" style="margin-top: 180px">
+    <div class="text-center" style="margin-bottom: 180px">
+        <table class="lecturers-table" id="lecturers-list-look" ng-controller="LecturersCtrl" style="margin: auto">
+            <tr>
+                <th>#</th>
+                <th>Vārds</th>
+                <th>Uzvārds</th>
+                <th>Apraksts</th>
+            </tr>
+
+            <tr ng-repeat="oneRec in arrRec track by $index">
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{$index + 1}} </p></th>
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{oneRec.name}}</p></th>
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{oneRec.surname}}</p></th>
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{oneRec.description}}</p></th>
+        </table>
+    </div>>
+</div>

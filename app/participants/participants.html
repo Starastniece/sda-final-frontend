@@ -1,0 +1,44 @@
+
+<div class="participant_div" style="margin-top: 140px;  text-align: center ", ng-controller="ParticipantsCtrl">
+
+    <div id="isa_error" class="isa_error" style="visibility:hidden">
+        <i class="fa fa-times-circle">
+            <span id="error_msg_text"></span>
+        </i>
+    </div>
+
+    <form  ng-controller="ParticipantsCtrl" ng-submit="submit()" method="post">
+        <h2>Reģistrācija</h2>
+        <fieldset>
+            <input class="participants-form" id="name" ng-model="name"
+                   placeholder="Vārds" type="text" tabindex="1" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <input class="participants-form" id="surname" ng-model="surname"
+                    placeholder="Uzvārds" type="text" tabindex="2" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <input class="participants-form" id="email" ng-model="email"
+                    placeholder="E-pasta adrese" type="text" tabindex="3" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <input class="participants-form" id="password" ng-model="password"
+                   placeholder="Parole" type="password" tabindex="4" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <input class="participants-form" id="password_again" ng-model="password_again"
+                   placeholder="Atkārtojiet paroli" type="password" tabindex="5" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <button class="register-button" name="submit" type="submit" data-submit="...Sending">PIESAKIES</button>
+        </fieldset>
+    </form>
+</div>
+
+
+

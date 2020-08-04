@@ -1,0 +1,27 @@
+<div ng-controller="EventsListCtrl" style="margin-top: 180px">
+
+    <div class="text-center" style="margin-bottom: 180px">
+        <table class="event-table" id="events-list-look" ng-controller="EventsListCtrl" style="margin: auto">
+            <tr>
+                <th>#</th>
+                <th>Nosaukums</th>
+                <th>Datums</th>
+                <th>Lektori</th>
+                <th>Adrese</th>
+                <th>Ieejas maksa</th>
+                <th>Ilgums</th>
+            </tr>
+
+            <tr ng-repeat="oneRec in arrRec track by $index">
+                <th style="background-color: gray">{{$index + 1}}</th>
+                <th style="background-color: gray">{{oneRec.title}}</th>
+                <th style="background-color: gray">{{oneRec.date}}</th>
+                <th style="background-color: gray">{{oneRec.lecturers}}</th>
+                <th style="background-color: gray">{{oneRec.street}}</th>
+                <th style="background-color: gray">{{oneRec.price}}</th>
+                <th style="background-color: gray">{{oneRec.duration}}</th>
+            </tr>
+        </table>
+    </div>
+
+</div>

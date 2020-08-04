@@ -1,1 +1,40 @@
-<p>This is the partial for view 1.</p>
+<!--<p>Te būs galvenā lapa</p>-->
+<!--<div class="top-sentence">-->
+<!--    <h4>stāstu stāstīšanas meistarklases</h4>-->
+<!--</div>-->
+<div class="view1-flex-container">
+    <div class="footer-div-container">
+        <h6>kontakti</h6>
+        <p>aizrauruna@gmail.com</p>
+        <p>+ 371 20604207 </p>
+    </div>
+    <div class="footer-div-container">
+        <h6>pieraksties jaunumiem</h6>
+        <form class="subscriber-form" style="border-radius: 5px" ng-controller="View1Ctrl" ng-submit="submit()" method="post">
+            <input type="email" ng-model="email" id="email" placeholder="e-pasta adrese" style="width: 160px; font-family: 'Barlow Condensed'; font-style: italic; font-size: 14px">
+            <br>
+            <br>
+            <button style="font-family: 'Barlow Condensed'; font-size: 13px; border: none; border-radius: 4px; background-color: rgb(230,50,75); margin-top: 0px"
+                    name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="btn btn-rounded btn-block btn-primary"
+                    >PIESAKIES</button>
+        </form>
+    </div>
+    <div class="footer-div-container">
+        <h6>informācija</h6>
+<!--        <div class="inner-footer-flex-container" style="display: flex">-->
+<!--            <div style="width: 50%; margin-right: 15px"> <img style="float: right" src="lib/pictures/ogres-novads.png"> </div>-->
+<!--            <div style="width: 50%; text-align: center">-->
+                <p style="margin: auto; font-size: 13px">
+
+                    Ar Ogres novada pašvaldības <br>projektu
+                    konkursa "R.A.D.I. - Ogres novadam"
+                    <br>finansiālu atbalstu
+
+                </p>
+<!--            </div>-->
+
+<!--        </div>-->
+
+
+    </div>
+</div>

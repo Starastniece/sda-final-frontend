@@ -1,0 +1,50 @@
+body {
+    font-family: "Barlow Condensed";
+}
+
+fieldset {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+
+
+}
+
+form {
+    margin-top: 14px;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.login-form {
+    border-radius: 3px;
+    border: 0.5px solid rgb(157, 157, 157);
+    width: 300px;
+    height: 40px;
+
+}
+
+.login_button {
+    /*button{*/
+    border-radius: 5px;
+    width: 305px;
+    height: 45px;
+    background-color: rgb(53, 54, 52);
+    transition-duration: 0.3s;
+    font-style: initial;
+    text-transform: uppercase;
+    border: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+/*}*/
+
+button:hover {
+    background-color: rgb(230,50,75);
+    color: whitesmoke;
+    font-family: "Barlow Condensed";
+
+
+}

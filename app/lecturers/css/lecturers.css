@@ -1,0 +1,30 @@
+
+#lecturers-list-look {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+    horiz-align: center;
+}
+
+#lecturers-list-look td, #events-list-look th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#lecturers-list-look tr:nth-child(even){background-color: #f2f2f2;}
+
+#lecturers-list-look tr:hover {background-color: #222222;}
+
+#lecturers-list-look th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(27, 27, 27, 0.76);
+    color: white;
+}
+
+
+

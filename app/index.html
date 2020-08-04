@@ -12,32 +12,105 @@
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="view1/css/view1.css">
+  <link rel="stylesheet" href="participants/css/participants.css">
+  <link rel="stylesheet" href="events.list/css/events_list.css">
+  <link rel="stylesheet" href="attendants/css/attendants.css">
+  <link rel="stylesheet" href="lecturers/css/lecturers.css">
+  <link rel="stylesheet" href="login/css/login.css">
+  <link rel="stylesheet" href="participants.list/css/participant_list.css">
+
+
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <style>
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .content {
+      padding-top: 102px;
+    }
+  </style>
+  <script src="view1/view1.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
+<!--<div class="top-container">-->
+<!--  <h1>Scroll Down</h1>-->
+<!--  <p>Scroll down to see the sticky effect.</p>-->
+<!--</div>-->
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
-  <div ng-view></div>
 
-  <div>AngularJS seed app: v<span app-version></span></div>
+<div class="page-open-title">
+  <h4 style="font-size: 20px; margin-top: 11px">stāstu stāstīšanas un publiskās runas meistarklases</h4>
+</div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="core/version/version.js"></script>
-  <script src="core/version/version-directive.js"></script>
-  <script src="core/version/interpolate-filter.js"></script>
+<div class="first-flex-container">
+
+  <div class="logo" style="width: 30%;  margin-left: 70px">
+    <h1 style="text-transform: uppercase; color: white; font-family: 'Barlow Condensed'"><a href="#!/view1">aizrauruna</a></h1>
+  </div>
+  <div class="menu-content" style="width: 70%">
+    <ul class="menu" id="myHeader">
+      <li class="menu-option"><a href="#!/events_list">PASĀKUMI</a></li>
+      <li class="menu-option"><a href="#!/lecturers">LEKTORI</a></li>
+      <li class="menu-option"><a href="#!/attendants">DALĪBNIEKI</a></li>
+      <li class="menu-option"><a href="#!/participants">PIESAKIES</a></li>
+      <li class="menu-option"><a href="#!/login">LOG IN</a></li>
+
+    </ul>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>-->
+<!--  <div>AngularJS seed app: v<span app-version></span></div>-->
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script>
+  window.onscroll = function() {myFunction()};
+
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="lecturers/lecturers.js"></script>
+<script src="participants/participants.js"></script>
+<script src="participants.list/participants_list.js"></script>
+<script src="header/header.js"></script>
+<script src="attendants/attendants.js"></script>
+<script src="events.list/events_list.js"></script>
+<script src="login/login.js"></script>
+
+<script src="core/version/version.js"></script>
+<script src="core/version/version-directive.js"></script>
+<script src="core/version/interpolate-filter.js"></script>
 </body>
 </html>

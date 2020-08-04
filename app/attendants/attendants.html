@@ -1,0 +1,21 @@
+<div ng-controller="AttendantsCtrl" style="margin-top: 180px">
+
+    <div class="text-center" style="margin-bottom: 180px">
+        <table class="attendants-table" id="attendants-list-look" ng-controller="AttendantsCtrl" style="margin: auto">
+            <tr style="border: yellow"  >
+                <th>#</th>
+                <th>Vārds</th>
+                <th>Uzvārds</th>
+                <th>Epasts</th>
+            </tr>
+
+            <tr ng-repeat="oneRec in arrRec track by $index">
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{$index + 1}}</p></th>
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{oneRec.name}}</p></th>
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{oneRec.surname}}</p></th>
+                <th style="background-color: whitesmoke"><p style="color: #222222">{{oneRec.email}}</p></th>
+            </tr>
+        </table>
+    </div>
+
+</div>
